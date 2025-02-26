@@ -1,0 +1,59 @@
+#register-container {
+  background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  flex-grow: 1;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+}
+
+mat-card-header {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+mat-card-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+}
+
+mat-card-actions {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .register-card {
+    padding: 20px;
+  }
+
+  mat-card-title {
+    font-size: 1.5rem;
+  }
+}

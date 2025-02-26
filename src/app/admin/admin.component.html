@@ -1,0 +1,61 @@
+<div class="admin-container">
+    <app-navbar></app-navbar>
+    <mat-card class="admin-card">
+        <mat-card-header>
+            <mat-card-title>Área Administrativa</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>Bienvenido, Administrador. Aquí puedes gestionar las localizaciones.</p>
+            
+            <!-- Botón para generar PDF -->
+            <button (click)="generatePdf()" class="generate-pdf-button">Generar Informe PDF</button>
+
+            <!-- Lista de sitios existentes -->
+            <h3>Sitios existentes</h3>
+            <ul class="sitios-list">
+                <li *ngFor="let sitio of sitios">
+                    {{ sitio.name }}
+                    <button (click)="deleteSite(sitio.id)" class="delete-button">Eliminar</button>
+                </li>
+            </ul>
+
+            <!-- Formulario para añadir nuevo sitio -->
+            <h3>Añadir nuevo sitio</h3>
+            <form (ngSubmit)="addNewSite()" class="admin-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" [(ngModel)]="newSite.name" name="name" required
+                        placeholder="Nombre del sitio" />
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <input id="description" type="text" [(ngModel)]="newSite.description" name="description" required
+                        placeholder="Descripción del sitio" />
+                </div>
+                <div class="form-group">
+                    <label for="location">Ubicación</label>
+                    <input id="location" type="text" [(ngModel)]="newSite.location" name="location" required
+                        placeholder="Ubicación del sitio" />
+                </div>
+                <div class="form-group">
+                    <label for="parrafo1">Párrafo 1</label>
+                    <textarea id="parrafo1" [(ngModel)]="newSite.parrafo1" name="parrafo1" required
+                        placeholder="Párrafo introductorio"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="parrafo2">Párrafo 2</label>
+                    <textarea id="parrafo2" [(ngModel)]="newSite.parrafo2" name="parrafo2" required
+                        placeholder="Detalles adicionales"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">URL de la imagen</label>
+                    <input id="imageUrl" type="text" [(ngModel)]="newSite.imageUrl" name="imageUrl" required
+                        placeholder="URL de la imagen" />
+                </div>
+                <button type="submit"
+                    [disabled]="!newSite.name || !newSite.description || !newSite.location || !newSite.imageUrl">Añadir
+                    Sitio</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

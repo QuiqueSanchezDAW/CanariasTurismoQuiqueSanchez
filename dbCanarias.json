@@ -1,0 +1,193 @@
+{
+  "sitios": [
+    {
+      "name": "Roque Nublo",
+      "description": "Impresionante monolito de roca volcánica y símbolo de Gran Canaria.",
+      "parrafo1": "El Roque Nublo es una formación rocosa de origen volcánica que se eleva a 1.813 metros sobre el nivel del mar.",
+      "parrafo2": "Ofrece vistas panorámicas espectaculares de la isla y es un destino popular para senderistas y amantes de la naturaleza.",
+      "imageUrl": "assets/imgs/roque-nublo.jpg",
+      "rating": [
+        9,
+        8,
+        9
+      ],
+      "comments": [
+        "¡Una experiencia inolvidable! La subida vale totalmente la pena por las vistas.",
+        "Impresionante monumento natural. Recomiendo ir temprano para evitar el calor."
+      ],
+      "commentUser": [
+        "María Rodríguez",
+        "Carlos Santana"
+      ],
+      "id": "roque_nublo"
+    },
+    {
+      "name": "Puerto de Mogán",
+      "description": "Pintoresco pueblo costero conocido como la 'Venecia de Canarias'.",
+      "parrafo1": "Puerto de Mogán es famoso por sus canales, puentes y coloridas casas con flores.",
+      "parrafo2": "El puerto deportivo y la playa ofrecen un ambiente relajado y romántico, ideal para parejas y familias.",
+      "imageUrl": "assets/imgs/puerto-mogan.jpg",
+      "rating": [
+        9,
+        8,
+        9,
+        8
+      ],
+      "comments": [
+        "Un lugar encantador, perfecto para pasear y disfrutar de la buena comida.",
+        "Las casas blancas y los canales le dan un toque muy especial. ¡Volveré seguro!"
+      ],
+      "commentUser": [
+        "Laura Pérez",
+        "Antonio Hernández"
+      ],
+      "id": "puerto_mogan"
+    },
+    {
+      "name": "Playa de Las Canteras",
+      "description": "Una de las mejores playas urbanas de Europa, situada en Las Palmas.",
+      "parrafo1": "La Playa de Las Canteras se extiende a lo largo de 3 km y está protegida por una barrera de arrecife natural.",
+      "parrafo2": "Ofrece aguas tranquilas ideales para nadar y hacer snorkel, además de un animado paseo marítimo.",
+      "imageUrl": "assets/imgs/playa-canteras.jpg",
+      "rating": [
+        10,
+        9,
+        8,
+        10
+      ],
+      "comments": [
+        "Mi playa favorita en toda Gran Canaria. El agua es cristalina y la arena dorada.",
+        "Genial para pasar el día, con muchos restaurantes y tiendas cerca."
+      ],
+      "commentUser": [
+        "Elena Martín",
+        "Pablo González"
+      ],
+      "id": "playa_canteras"
+    },
+    {
+      "name": "Gáldar",
+      "description": "Antigua capital de la isla con importante patrimonio histórico y cultural.",
+      "parrafo1": "Gáldar conserva numerosos edificios históricos y la Cueva Pintada, importante yacimiento arqueológico guanche.",
+      "parrafo2": "Su plaza principal y la iglesia de Santiago de los Caballeros son puntos de interés destacados.",
+      "imageUrl": "assets/imgs/galdar.jpg",
+      "rating": [
+        8,
+        8,
+        9
+      ],
+      "comments": [
+        "Un viaje al pasado de la isla. La Cueva Pintada es fascinante.",
+        "El casco antiguo tiene mucho encanto, ideal para pasear tranquilamente."
+      ],
+      "commentUser": [
+        "Javier Sosa",
+        "Ana Vega"
+      ],
+      "id": "galdar_historico"
+    },
+    {
+      "name": "Valle de Agaete",
+      "description": "Hermoso valle conocido por sus plantaciones de café y su pintoresco puerto.",
+      "parrafo1": "El Valle de Agaete es famoso por ser el único lugar de Europa donde se cultiva café.",
+      "parrafo2": "Además del café, destaca por sus paisajes, el Puerto de las Nieves y sus piscinas naturales.",
+      "imageUrl": "assets/imgs/agaete.jpg",
+      "rating": [
+        9,
+        8,
+        9,
+        9
+      ],
+      "comments": [
+        "Probé el café local y es exquisito. Las vistas del valle son impresionantes.",
+        "Las piscinas naturales son perfectas para refrescarse. Un lugar muy tranquilo."
+      ],
+      "commentUser": [
+        "Lucía Domínguez",
+        "Miguel Ángel Torres"
+      ],
+      "id": "valle_agaete"
+    },
+    {
+      "name": "Tejeda",
+      "description": "Pueblo situado en el corazón de Gran Canaria, conocido por su casco histórico y paisajes naturales.",
+      "parrafo1": "Tejeda es famoso por su casco histórico, la Iglesia de Nuestra Señora del Socorro y el Museo de Esculturas Abraham Cárdenes.",
+      "parrafo2": "Ofrece vistas impresionantes desde el mirador de la Degollada de Becerra y es un punto de partida para visitar el Roque Nublo y Bentayga.",
+      "imageUrl": "assets/imgs/tejeda.jpg",
+      "rating": [
+        9,
+        8,
+        9
+      ],
+      "comments": [
+        "Un pueblo encantador con mucho encanto. Las vistas desde el mirador son increíbles.",
+        "Me gustó mucho el Museo de Esculturas Abraham Cárdenes."
+      ],
+      "commentUser": [
+        "María García",
+        "Juan López"
+      ],
+      "id": "tejeda"
+    },
+    {
+      "name": "Playa de Maspalomas",
+      "description": "Una de las playas más emblemáticas del sur de Gran Canaria, rodeada por las Dunas de Maspalomas.",
+      "parrafo1": "La playa de Maspalomas es famosa por sus tres kilómetros de arena dorada y su ambiente relajado.",
+      "parrafo2": "Ofrece servicios para familias y deportes acuáticos en la zona de la Punta de Maspalomas.",
+      "imageUrl": "assets/imgs/maspalomas.jpg",
+      "rating": [
+        9,
+        8,
+        9,
+        8
+      ],
+      "comments": [
+        "Una playa impresionante con dunas únicas. Perfecta para familias.",
+        "Me encantó el paseo en camello por las dunas."
+      ],
+      "commentUser": [
+        "Sofía Díaz",
+        "Rafael Martínez"
+      ],
+      "id": "maspalomas"
+    }
+  ],
+  "users": [
+    {
+      "id": "quique",
+      "firstName": "user",
+      "lastName": "prueba",
+      "comunidad": "Andalucía",
+      "email": "admin@admin.com",
+      "role": "administrador",
+      "birthday": "2024-02-25",
+      "gender": "masculino",
+      "phone": "111111111",
+      "password": "1234"
+    },
+    {
+      "id": "be27",
+      "firstName": "Quique",
+      "lastName": "Sánchez",
+      "email": "q@gmail.com",
+      "password": "$2b$10$RXwud5EVEf5rBiCsgQBYyuGrqbFQdNKc/MZTo5YmRVVuc17omZbBu",
+      "phone": "654987321",
+      "birthday": "1996-11-22",
+      "gender": "masculino",
+      "role": "usuario",
+      "comunidad": "Castilla La Mancha"
+    },
+    {
+      "id": "667d",
+      "firstName": "pepe",
+      "lastName": "pepito",
+      "email": "pepe@gmail.com",
+      "password": "$2b$10$rbQWjThAvPsNcDXOOxflWu4cBXvk/YuZoOAi3jLiEflbOVmGhrHWW",
+      "phone": "654872193",
+      "birthday": "2008-11-11",
+      "gender": "femenino",
+      "role": "usuario",
+      "comunidad": "Murcia"
+    }
+  ]
+}

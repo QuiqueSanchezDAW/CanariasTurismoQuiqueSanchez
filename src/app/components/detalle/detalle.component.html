@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div *ngIf="sitio; else noData" class="detalle-container">
+    <mat-card class="detalle-card">
+        <mat-card-header>
+            <mat-card-title>{{ sitio.name }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="sitio.imageUrl" [alt]="sitio.name">
+        <mat-card-content>
+            <p>{{ sitio.description }}</p>
+            <p>{{ sitio.parrafo1 }}</p>
+            <p>{{ sitio.parrafo2 }}</p>
+        </mat-card-content>
+
+        <div class="comentarios-section">
+            <h3>Comentarios</h3>
+            <div *ngFor="let comment of sitio.comments; let i = index" class="comentario">
+                <p><strong>{{ sitio.commentUser[i] }}</strong>: {{ comment }}</p>
+            </div>
+
+            <h3>Deja tu comentario</h3>
+            <div *ngIf="authService.isAuthenticated(); else notAuthenticated" class="add-comentario">
+                <textarea [(ngModel)]="newComment" placeholder="Escribe un comentario"></textarea>
+                <br>
+                <label>Puntuación: </label>
+                <input type="number" [(ngModel)]="newRating" min="1" max="5">
+            </div>
+            <ng-template #notAuthenticated>
+                <p>Debes iniciar sesión para dejar un comentario.</p>
+            </ng-template>
+        </div>
+
+        <mat-card-actions>
+            <button mat-button (click)="goBack()">Volver</button>
+            <button mat-button (click)="addComment()" *ngIf="authService.isAuthenticated()">Añadir comentario</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<ng-template #noData>
+    <p>No se encontró el sitio.</p>
+</ng-template>

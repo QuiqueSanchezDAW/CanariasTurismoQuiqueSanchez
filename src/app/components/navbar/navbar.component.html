@@ -1,0 +1,11 @@
+<mat-toolbar class="navbar">
+    <a href="/" id="linkindex" class="navbar-title"><span>Turismo Canarias App</span></a>
+    <span class="spacer"></span>
+    <div id="button-container" class="navbar-buttons">
+        <button *ngIf="!isAuthenticated" mat-button (click)="goToLogin()" class="navbar-button">Login</button>
+        <button *ngIf="!isAuthenticated" mat-button (click)="goToRegister()" class="navbar-button">Registrarse</button>
+        <button *ngIf="isAuthenticated" mat-button (click)="logout()" class="navbar-button">Logout</button>
+        <button *ngIf="role === 'administrador'" mat-button (click)="addNewSite()" class="navbar-button">Añadir
+            Sitio</button>
+    </div>
+</mat-toolbar>
